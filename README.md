@@ -15,7 +15,6 @@
 ![Sauce Test Status](http://i.imgur.com/UI2i3YY.gif)
 ![Sauce Test Status](https://media.giphy.com/media/dVTnzQa3xUlKo/giphy.gif)
 ![Sauce Test Status](http://i.imgur.com/UI2i3YY.gif)
-![Sauce Test Status](http://i.imgur.com/UI2i3YY.gif)
-![Sauce Test Status](http://i.imgur.com/UI2i3YY.gif)
+![Sauce Test Status](https://media.giphy.com/media/dVTnzQa3xUlKo/giphy.gif)
 ![Sauce Test Status](http://i.imgur.com/UI2i3YY.gif)<br/>
 <i>"A vingança nunca é plena, mata a alma e a envenena." Don Ramón</i>
