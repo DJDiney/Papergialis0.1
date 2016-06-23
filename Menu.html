@@ -15,10 +15,21 @@
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   	<script src="assets/js/custom.js"></script> 
     <script src="assets/js/jquery-1.10.2.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("NavBar.html"); 
-    });
+    <script >
+    	$(window).scroll(function () {
+			if ($(window).scrollTop() >= 300) {
+				$('.navbar').css('padding-top','0px');
+				$('.navbar').css('padding-bottom','0px');
+				$('.navbar').css('background-color','#36312B');
+				
+			} else {
+				$('.navbar').css('background','transparent');
+				$('.navbar').css('padding-top','10px');
+				$('.navbar').css('padding-bottom','10px');
+			}
+			});
+    </script>
+    <script>
     </script>
 	<script>
     	$(window).scroll(function () {
@@ -33,7 +44,92 @@
 
 <body>
 		<div id="navbar">
-	   		<div id="includedContent"></div>
+	   		<div id="includedContent">
+            	<nav class="navbar navbar-fixed-top navbar-ct-transparent" role="navigation" id="navbar">
+                  <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                           <a class="navbar-brand" style="color:#D1D1D1" href="#">Prodigialis RH</a>
+                    </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navigation-example-2">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                            <a href="Saiba.html" class="btn btn-simple">Sobre a empresa</a>
+                          </li>
+                          <li>
+                            <a href="EnvCurriculos.html" class="btn btn-simple">Envie seu currículo</a>
+                          </li>
+                          <li>
+                            <a target="_blank" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" class="btn btn-primary">Log-in</a>
+                          </li>
+                       </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-->
+                </nav>
+                            <div class="modal fade login" id="loginModal">
+                              <div class="modal-dialog login animated">
+                                  <div class="modal-content">
+                                     <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Entrar</h4>
+                                    </div>
+                                    <div class="modal-body">  
+                                        <div class="box">
+                                             <div class="content">
+                                                <div class="social">
+                                                    <a class="circle github" style="margin-right:0px;padding-right: 13px;padding-left: 13px;" href="x_login-register modal/auth/github">
+                                                        <i class="fa fa-github fa-fw"></i>
+                                                    </a>
+                                                    <a id="google_login" class="circle google" style="margin-right:0px;padding-right: 13px;padding-left: 13px;"  href="x_login-register modal/auth/google_oauth2">
+                                                        <i class="fa fa-google-plus fa-fw"></i>
+                                                    </a>
+                                                    <a id="facebook_login" class="circle facebook" style="margin-right:0px;padding-right: 13px;padding-left: 13px;"  href="x_login-register modal/auth/facebook">
+                                                        <i class="fa fa-facebook fa-fw"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="division">
+                                                    <div class="line l"></div>
+                                                      <span>ou</span>
+                                                    <div class="line r"></div>
+                                                </div>
+                                                <div class="error"></div>
+                                                <div class="form loginBox">
+                                                    <form method="post" action="/login" accept-charset="UTF-8">
+                                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                                    <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                                    </form>
+                                                </div>
+                                             </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="content registerBox" style="display:none;">
+                                             <div class="form">
+                                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                                <input id="password" class="form-control" type="password" placeholder="Senha" name="password">
+                                                <input id="password_confirmation" class="form-control" type="password" placeholder="Confirmar senha" name="password_confirmation">
+                                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
+                                                </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+	
+            </div>
 			  <div class="blurred-container" style>
             		<div class="img-src" id="imgNav" style="background-image: url('imagens/bg2.jpg')"></div>
                     <div class="img-src blur" id="imgNavBlur"  style="opacity: 0; background-image: url('imagens/bg2_blur.jpg');"></div>
