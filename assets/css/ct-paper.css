@@ -2061,7 +2061,7 @@ textarea.form-control {
   border: 0 none;
 }
 .nav-tabs > li.active :after {
-  border-bottom: 11px solid #FFFCF5;
+  border-bottom: 11px solid #ffffff;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   content: "";
