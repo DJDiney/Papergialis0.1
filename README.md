@@ -8,7 +8,7 @@
 ![Sauce Test Status](https://media.giphy.com/media/dVTnzQa3xUlKo/giphy.gif)
 <br /> <br />
 	<ul>
-	   <li><h2>Menu principal:https://htmlpreview.github.io/?https://github.com/DJDiney/Papergialis0.1/blob/master/Menu.html</h2></li>
+	   <li><h2>Menu principal:https://htmlpreview.github.io/?https://github.com/DJDiney/Papergialis0.1/blob/master/Principal.html</h2></li>
 	   <li><h2>-Barra de navegação <i>Sim, tá separada essa pustema</i>:https://htmlpreview.github.io/?https://github.com/DJDiney/Papergialis0.1/blob/master/NavBar.html</h2></li>
 	</ul>
 <br /> <br /> 
