@@ -25,7 +25,7 @@
 		
 		<div id="navbar">
 	   		<div id="includedContent">
-            	<nav class="navbar navbar-default" style="background-color:#36312B;padding-top:0px;padding-bottom:0px;" role="navigation" id="navbar">
+            	<nav class="navbar navbar-default" style="background-color:#36312B;padding-top:0px;margin-bottom:5px;padding-bottom:0px" role="navigation" id="navbar">
                   <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -57,34 +57,27 @@
 			</div>  
 		   </div>
 		
-			
-                
                   <!-- tabs left -->
-                  <div class="tabbable tabs-left">
-                    <ul class="nav nav-tabs">
-                      <li><a href="#a" data-toggle="tab"><i class="fa fa-file-text" aria-hidden="true"></i>Ver curriculo</a></li>
-                      <li class="active"><a href="#b" data-toggle="tab">Situação do processo</a></li>
-                      <li><a href="#c" data-toggle="tab">Criar processo seletivo</a></li>
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                        <li><a href="CriarProc.html" target="b">Criar processo</a></li>
+                        <li><a href="verProc.html"  target="b">Acompanhar processo</a></li>
+                        <li><a href="VerCurri.html" target="b">Ver curriculos</a></li>
                     </ul>
-                    <div class="tab-content">
-                     <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
-                     Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-                     <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-                     Aliquam in felis sit amet augue.</div>
-                     <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-                     Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
                     </div>
-                  <!-- /tabs -->
-                  
+                </div>
+                <div id="my-tab-content" class="tab-content text-center">
+                   		 <iframe src="EnvCurriculos.html" height="75%" width="80%" style="border:0px" name="b"/>
                 </div>
 	
-      	
 	<footer class="page-footer" style="position:block;font-family:'Montserrat', 'Helvetica', Arial, sans-serif;background-color:#36312B;margin:0px;color:#d1d1d1;bottom:0px;position:absolute;width:100%;text-align:center;padding-top:20px;padding-bottom:20px;">
+    	<div class="container">
 			<div>Prodigialis RH<span>  ·  </span>Trabalho de conclusão de curso</div>
             <div>Centro Federal de Educação Tecnológica de Minas Gerais</div>
 			<div>Já nos conhece? Conheça a <a href="" style="color:#777;">staff</a></div>
 			<div>Publicado sob a licença de <a href="http://www.creative-tim.com/license" style="color:#777;">Creative Tim</a></div>
-		
+		</div>
 	</footer>
 	
 </body>

@@ -57,9 +57,14 @@ function loginAjax(){
 
 /*   Simulate error message from the server   */
 	if(document.getElementById("email").value=="admin"){
-		window.location.href = "Menu.html"
+		window.location.href = "MenuFunc.html"
 	}
+	if(document.getElementById("email").value=="user"){
+		window.location.href = "MenuUser.html"
+	}
+	else{
      shakeModal();
+	 }
 }
 
 function shakeModal(){
