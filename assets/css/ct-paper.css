@@ -2047,10 +2047,10 @@ textarea.form-control {
   border: 0 none;
   color: #A49E93;
 }
-.nav-tabs > li > a:hover {
+.nav-tabs > li > a:hover, .fa:hover{
   color: #66615b;
 }
-.nav-tabs > li.active {
+.nav-tabs > li.active, .fa:active {
   color: #66615b;
   position: relative;
 }
@@ -2070,6 +2070,17 @@ textarea.form-control {
   right: 40%;
   bottom: -1px;
 }
+
+ .fa:after {
+	color: #66615b;
+ 
+ }
+ 
+  .fa:focus {
+	color: #66615b;
+ 
+ }
+
 .nav-tabs > li.active :before {
   border-bottom: 11px solid #F1EAE0;
   border-left: 11px solid transparent;
@@ -2533,6 +2544,7 @@ textarea.form-control {
 }
 
 @media (min-width: 768px) {
+
   .navbar-form {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -2595,6 +2607,7 @@ textarea.form-control {
 }
 /*          Changes for small display      */
 @media (max-width: 767px) {
+	
   .navbar-transparent {
     padding-top: 15px;
     background-color: rgba(0, 0, 0, 0.45);
@@ -2696,11 +2709,12 @@ textarea.form-control {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #FFFCF5;
+    background-color: #d1d1d1;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
     display: block;
     content: "";
     z-index: 1;
+	
   }
   body > .navbar-collapse.has-image::after {
     top: 0;
@@ -2735,7 +2749,8 @@ textarea.form-control {
     transform: translate3d(-230px, 0, 0);
   }
 
-  .navbar-toggle .icon-bar {
+  .
+  .icon-bar {
     display: block;
     position: relative;
     background: #fff;
@@ -3129,6 +3144,16 @@ textarea.form-control {
   .modal-footer .btn-simple {
     padding: 15px;
   }
+  
+  .navbar-header .navbar-toggle {
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+}
+  
+  .navbar-toggle {
+		display: block;
+	}
 }
 @media (max-width: 768px) {
   .table-responsive {
